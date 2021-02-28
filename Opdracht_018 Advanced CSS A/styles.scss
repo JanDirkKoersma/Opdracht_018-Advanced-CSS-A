@@ -1,0 +1,61 @@
+$padding: 2em;
+$radius: 1em;
+$font: 20px;
+$primaryclr: #c3cfe2;
+$secondaryclr: #fff;
+$thirdclr: #686de0;
+
+body {
+  background: $primaryclr;
+  font-family: Arial;
+  font-size: $font;
+  line-height: 150%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.card {
+  position: absolute;
+  margin: auto;
+  border-radius: $radius;
+  width: 300px;
+  top: 25%;
+  left: 30%;
+  box-shadow: 17px 18px 19px -8px rgba(50, 77, 124, 0.45);
+
+  &__txt {
+    position: relative;
+    background: $secondaryclr;
+    height: 12em;
+    padding: $padding;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+
+    & img {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      display: block;
+      margin: 1em 3em;
+      border-radius: 50%;
+      border: solid $secondaryclr 5px;
+    }
+
+    &__img {
+      position: absolute;
+      top: 240px;
+    }
+  }
+
+  &__footer {
+    font-size: 16px;
+    background: $thirdclr;
+    color: $secondaryclr;
+    padding: $padding;
+    padding-top: 4.5em;
+    text-align: center;
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
+    letter-spacing: 1px;
+  }
+}
